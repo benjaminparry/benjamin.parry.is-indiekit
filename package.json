@@ -1,17 +1,21 @@
 {
+  "private": true,
   "name": "benjamin.parry.is-indiekit",
   "version": "1.0.0",
   "description": "Indiekit server for https://benjamin.parry.is",
-  "main": "index.js",
-  "scripts": {
-    "start": "indiekit serve"
-  },
   "keywords": [
     "indiekit",
     "indieweb"
   ],
-  "author": "",
-  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "indiekit serve"
+  },
+  "author": {
+    "name": "Benjamin Parry",
+    "url": "https://benjamin.parry.is"
+  },
+  "homepage": "https://benjamin-indiekit.parry.is",
   "engines": {
     "node": ">=20"
   },
