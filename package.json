@@ -1,0 +1,47 @@
+{
+  "name": "benjamin.parry.is-indiekit",
+  "version": "1.0.0",
+  "description": "Indiekit server for https://benjamin.parry.is",
+  "main": "index.js",
+  "scripts": {
+    "start": "indiekit serve"
+  },
+  "keywords": [
+    "indiekit",
+    "indieweb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "indiekit": {
+    "plugins": [
+      "@indiekit/preset-hugo",
+      "@indiekit/store-github",
+      "@indiekit/syndicator-mastodon"
+    ],
+    "publication": {
+      "me": "https://benjamin.parry.is"
+    },
+    "@indiekit/preset-hugo": {
+      "frontMatterFormat": "yaml"
+    },
+    "@indiekit/store-github": {
+      "user": "benjaminparry",
+      "repo": "benjamin.parry.is",
+      "branch": "main"
+    },
+    "@indiekit/syndicator-mastodon": {
+      "url": "mastodon.social",
+      "user": "benjaminparry"
+    }
+  },
+  "dependencies": {
+    "@indiekit/indiekit": "^1.0.0-beta.9",
+    "@indiekit/preset-hugo": "^1.0.0-beta.8",
+    "@indiekit/store-github": "^1.0.0-beta.8",
+    "@indiekit/syndicator-mastodon": "^1.0.0-beta.8"
+  }
+}
